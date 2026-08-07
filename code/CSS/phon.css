@@ -1,0 +1,62 @@
+@media(max-width: 1000px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .number{
+        width: 36%;
+    }
+    .hum{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: black;
+        border: none;
+        border-radius: 50%;
+        margin-left: 10px;
+        position: relative;
+        width: fit-content;
+        padding: 10px;
+    }
+    .hum div{
+        background-color: white;
+        width: 40px;
+        height: 5px;
+        border-radius: 10px;
+    }
+    .hum2{
+        display: none;
+    }
+    .hum3{
+        top: 14px;
+        left: 5px;
+        rotate: 45deg;
+        margin-top: 10px;
+    }
+    .hum4{
+        left: 5px;
+        top: 24px;
+        rotate: -45deg;
+        margin-bottom: 10px;
+    }
+    .hum5{
+        position: absolute;
+        width: 50px !important;
+    }
+    .hum6{
+        width: 62px;
+        height: 55px;
+    }
+    .uol{
+        display: none;
+    }
+    .hum7{
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+    }
+}
