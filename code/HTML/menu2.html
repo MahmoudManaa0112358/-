@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>menu page</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+        }
+        .imge{
+            width: 75%;
+            margin-left: 12.5%;
+        }
+    </style>
+    </head>
+    <body>
+    <script type="module">
+
+    import { restaurants } from '.././JS/data/restrant.js';
+
+    const ACN = restaurants.length - 1;
+
+    const urlparms = new URLSearchParams(window.location.search);
+    let counter = Number(urlparms.get('c')) || 0;
+
+    if (!restaurants[counter]){
+        counter = 0;
+    }
+
+    let ON = Object.keys(restaurants[counter]).length - 3;
+
+    let counter2 = 1;
+
+            while( ON >= counter2){
+
+                let img = document.createElement("img");
+                let imgsrc = "imge" + counter2;
+                let imgsrc2 = restaurants[counter][imgsrc];
+                img.src = imgsrc2;
+
+                img.className = "imge"
+
+                document.body.appendChild(img);
+
+                counter2++;
+            }
+
+    </script>
+    </body>
+</html>
