@@ -1,0 +1,27 @@
+*{
+    color: #2D3748;
+}
+body{
+    background-color: #f0f4f8;
+}
+.call{
+    background-color: #2f855a;
+}
+.location{
+    background-color: #2b6cb0;
+}
+.menu{
+    background-color: #00a8cc;
+}
+.contaner{
+    background-color: #FFF;
+}
+footer{
+    background-color: #F8F9FA;
+}
+header{
+    background-color: #008080;
+}
+#hello , header a{
+    color: #FFF;
+}
